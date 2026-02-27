@@ -1,0 +1,15 @@
+filename = input("Enter file name: ")
+
+if "." not in filename:
+    print("Unknown file type")
+else:
+    ext = filename.split(".")[-1].lower()
+
+    if ext in ["jpg", "png", "gif"]:
+        print("Image file")
+    elif ext in ["pdf", "doc", "txt"]:
+        print("Document file")
+    elif ext in ["mp4", "mkv"]:
+        print("Video file")
+    else:
+        print("Unknown file type")
