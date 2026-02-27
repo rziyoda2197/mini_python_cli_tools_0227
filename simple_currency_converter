@@ -1,0 +1,12 @@
+usd_to_uzs = 12500
+eur_to_uzs = 13500
+
+amount = float(input("Enter amount: "))
+currency = input("Enter currency (USD/EUR): ").upper()
+
+if currency == "USD":
+    print("UZS:", amount * usd_to_uzs)
+elif currency == "EUR":
+    print("UZS:", amount * eur_to_uzs)
+else:
+    print("Unsupported currency")
